@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalhe</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-thumbnail>
+      <img [src]="lista.avatar" alt="Image">
+    </ion-thumbnail>
+    <div>
+      <h4>{{lista.first_name+' '+lista.last_name}}</h4>
+      <p>{{lista.email}}</p>
+    </div>
+    <ion-badge color="dark" slot="end">
+      ID: {{lista.id}}
+    </ion-badge>
+  </ion-item>
+</ion-content>
